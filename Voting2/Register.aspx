@@ -53,7 +53,7 @@
         <!--Nav bar End-->
 
 
-        <div id="index-banner" class="parallax-container">
+        <div id="index-banner" class="parallax-container" style="height:280px">
             <div class="section no-pad-bot">
                 <div class="container">
                     <br />
