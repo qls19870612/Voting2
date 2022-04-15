@@ -38,7 +38,7 @@ public partial class Elections : System.Web.UI.Page
             }
             catch(SqlException dsfve)
             {
-                Label1.Text = "Already applied for this election.";
+                Label1.Text = "选举已经生效";
             }
             con.Close();
             LinkButton l1 = sender as LinkButton;
@@ -46,11 +46,11 @@ public partial class Elections : System.Web.UI.Page
         }
         else if(DateTime.Now >start && DateTime.Now <=end)
         {
-            Label1.Text = "Election Currently going on! Please vote";
+            Label1.Text = "选举正在进行中，请投票。";
         }
         else
         {
-            Label1.Text = "Election Over!!";
+            Label1.Text = "选举已经结束！";
         }
     }
     protected void vote_Click(object sender, EventArgs e)
@@ -68,9 +68,9 @@ public partial class Elections : System.Web.UI.Page
         if (DateTime.Now >= start && DateTime.Now <= end)
             Response.Redirect("voting.aspx?id="+firstColData+"&title="+ name );
         else if (DateTime.Now < start)
-            Label1.Text = "Election not started!!";
+            Label1.Text = "选举还未开始";
         else
-            Label1.Text = "Election Over!!";
+            Label1.Text = "选举已经结！";
     }
     protected void result_Click(object sender, EventArgs e)
     {
@@ -87,8 +87,8 @@ public partial class Elections : System.Web.UI.Page
         if (DateTime.Now >= end)
             Response.Redirect("result.aspx?id=" + firstColData + "&title=" + name);
         else if (DateTime.Now >= start && DateTime.Now < end)
-            Label1.Text = "Election Currently going on! Please vote";
+            Label1.Text = "选举正在进行中，请投票。";
         else
-            Label1.Text = "Election not started!!" ;
+            Label1.Text = "选举还未开始!" ;
     }
 }

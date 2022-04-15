@@ -32,7 +32,7 @@ public partial class images_Register : System.Web.UI.Page
         }
         catch(SqlException sdfe)
         {
-            Response.Write("Error. Check if you are already registered with same ID.");
+            Response.Write("可能些账号已经被注册!");
             Console.WriteLine(String.Format("Error:%s", sdfe.StackTrace));
         }
         con.Close();

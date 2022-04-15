@@ -28,11 +28,11 @@ public partial class _Default : System.Web.UI.Page
         con = new SqlConnection(str);
         con.Open();
 
-        SqlCommand cmd = new SqlCommand("select * from users where id='" + username.Value + "'", con);
+        SqlCommand cmd = new SqlCommand("select passworduser from users where id='" + username.Value + "'", con);
         SqlDataReader dr = cmd.ExecuteReader();
         if (dr.Read() == true)
         {
-            if (password.Value.ToString() == dr.GetString(14))
+            if (password.Value.ToString() == dr.GetString(0))
             {
                 FormsAuthentication.SetAuthCookie(username.Value, true);
                 Response.Redirect("Elections.aspx");
