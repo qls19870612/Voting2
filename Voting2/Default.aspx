@@ -44,9 +44,9 @@
             </div>
         </nav>
 
-        <div id="index-banner" class="parallax-container" style="height: 280px">
+        <div id="index-banner" class="parallax-container" >
             <div class="section no-pad-bot">
-                <div class="container">
+                <div class="container" >
                     <br />
                     <br />
                     <h1 class="header center white-text">选举系统</h1>
@@ -68,7 +68,7 @@
 
 
 
-        <div class="row" style="margin-top:100px">
+        <div class="row" >
             <div class="col s4 offset-s4 input-field">
                 <i class="material-icons prefix">account_circle</i>
                 <input id="username" type="text" class="validate" runat="server" />

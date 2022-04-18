@@ -75,7 +75,7 @@
             <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" CellPadding="4" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
-                    <asp:BoundField DataField="candidate" HeaderText="Candidates" SortExpression="candidate" />
+                    <asp:BoundField DataField="candidate" HeaderText="候选人" SortExpression="candidate" />
                     <asp:BoundField DataField="IT_votes" HeaderText="IT" ReadOnly="True" SortExpression="IT_votes" />
                     <asp:BoundField DataField="EDU_votes" HeaderText="教育" ReadOnly="True" SortExpression="EDU_votes" />
                     <asp:BoundField DataField="MED_votes" HeaderText="医疗" ReadOnly="True" SortExpression="MED_votes" />

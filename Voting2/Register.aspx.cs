@@ -23,7 +23,7 @@ public partial class images_Register : System.Web.UI.Page
 
         string command = "insert into users values('" + rollnum.Value + "','"
             + firstname.Value + "','"  + mobile.Value + "','"
-            + email.Value + "','" + state.Value + "','" + birthdate.Value + "',"
+            + email.Value + "','" + state.Value + "','" + birthdate.Value + "','"
             + RadioButtonList1.SelectedValue + "','"+DropDownList5.SelectedValue+"','"+pass.Value+"')";
         Console.WriteLine(String.Format("command:%s", command));
         SqlCommand cmd = new SqlCommand(command,con);

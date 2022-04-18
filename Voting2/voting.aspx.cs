@@ -42,7 +42,7 @@ public partial class voting : System.Web.UI.Page
         SqlDataReader dr2 = cmd2.ExecuteReader();
         dr2.Read();
  
-            user_branch = dr2.GetString(2);
+            user_branch = dr2.GetString(0);
         dr2.Close();
         SqlCommand cmd1 = new SqlCommand(str1, con);
         SqlDataReader dr1 = cmd1.ExecuteReader();
@@ -50,7 +50,7 @@ public partial class voting : System.Web.UI.Page
         {
             
                 
-            if((dr1.GetInt32(12)==1 && user_branch=="IT")||(dr1.GetInt32(13) == 1 && user_branch == "EDU") ||(dr1.GetInt32(14) == 1 && user_branch == "MED"))
+            if((dr1.GetInt32(0)==1 && user_branch=="IT")||(dr1.GetInt32(1) == 1 && user_branch == "EDU") ||(dr1.GetInt32(2) == 1 && user_branch == "MED"))
             {
                 authorised = true;
             }

@@ -98,19 +98,19 @@
                         <asp:BoundField DataField="starttime" HeaderText="起始时间" SortExpression="starttime" />
                         <asp:BoundField DataField="endtime" HeaderText="结束时间" SortExpression="endtime" />
                         <asp:BoundField DataField="descriptionelection" HeaderText="备注" SortExpression="descriptionelection" />
-                        <asp:TemplateField HeaderText="Apply">
+                        <asp:TemplateField HeaderText="参加">
                             <ItemTemplate>
-                                <asp:LinkButton runat="server" ID="apply" OnClick="apply_Click">Apply</asp:LinkButton>
+                                <asp:LinkButton runat="server" ID="apply" OnClick="apply_Click">成为候选人</asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <asp:TemplateField HeaderText="Vote">
+                        <asp:TemplateField HeaderText="投票">
                             <ItemTemplate>
-                                <asp:LinkButton runat="server" ID="vote" OnClick="vote_Click">Vote</asp:LinkButton>
+                                <asp:LinkButton runat="server" ID="vote" OnClick="vote_Click">投票</asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <asp:TemplateField HeaderText="Stats">
+                        <asp:TemplateField HeaderText="投票结果">
                             <ItemTemplate>
-                                <asp:LinkButton runat="server" ID="showresults" OnClick="result_Click">Stats</asp:LinkButton>
+                                <asp:LinkButton runat="server" ID="showresults" OnClick="result_Click">查看结果</asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>

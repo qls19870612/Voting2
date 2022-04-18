@@ -9,6 +9,19 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="materialize-v1.0.0/materialize/css/materialize.min.css" />
+    <style>
+        [type="checkbox"]:not(:checked),
+        [type="checkbox"]:checked {
+            position: relative;
+            opacity: 1;
+            margin-right: 5px;
+            pointer-events:painted;
+        }
+
+        [type="checkbox"] + label {
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     <!--Nav bar-->
@@ -72,12 +85,12 @@
                     <label for="endtime"></label>
                 </div>
             </div>
-        
-      
+
+
             <div class="row">
                 <div class="col s12">
                     <h6><strong>选择职业条件</strong></h6>
-                    <asp:CheckBoxList ID="CheckBoxList3" runat="server" RepeatDirection="Horizontal" CssClass="no-autoinit">
+                    <asp:CheckBoxList ID="CheckBoxList3" runat="server" RepeatDirection="Horizontal">
                         <asp:ListItem Value="1">IT</asp:ListItem>
                         <asp:ListItem Value="1">教育</asp:ListItem>
                         <asp:ListItem Value="1">医疗</asp:ListItem>

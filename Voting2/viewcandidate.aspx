@@ -45,34 +45,34 @@
           
                 <p>
                     <b>账号:     </b>
-                    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
                 </p>
                 <p>
                     <b>手机:     </b>
-                    <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
                 </p>
                 <p>
                     <b>邮箱:     </b>
-                    <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
                 </p>
                 <p>
                     <b>联系地址:     </b>
-                    <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
                 </p>
                 <p>
                     <b>生日:     </b>
-                    <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
                 </p>
             </div>
             <div class="col s6">
         
                 <p>
                     <b>性别:     </b>
-                    <asp:Label ID="Label13" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
                 </p>
                 <p>
                     <b>职业:     </b>
-                    <asp:Label ID="Label14" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
                 </p>
             </div>
         </div>

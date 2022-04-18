@@ -91,9 +91,9 @@
                 <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
                     <Columns>
                         <asp:BoundField DataField="cid" HeaderText="Candidate ID" SortExpression="cid" />
-                        <asp:TemplateField HeaderText="">
+                        <asp:TemplateField HeaderText="投票">
                             <ItemTemplate>
-                                <asp:LinkButton runat="server" ID="vote" OnClick="vote_Click">VOTE</asp:LinkButton>
+                                <asp:LinkButton runat="server" ID="vote" OnClick="vote_Click">投一票</asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
